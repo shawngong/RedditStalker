@@ -11,6 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UIButton *clearHistory;
 
 @end
 
@@ -29,7 +31,7 @@
     [self.view addGestureRecognizer:tap];
 }
 
-- (void)dimissKeyBoard
+- (void)dismissKeyboard
 {
     [self.view endEditing:YES];
 }
@@ -42,7 +44,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
-    return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return NO;
 }
 
 @end

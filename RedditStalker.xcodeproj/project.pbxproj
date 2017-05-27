@@ -16,6 +16,17 @@
 		C83F96D61ED9F81700E1EF2C /* backgroundRedGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */; };
 		C83F96D91ED9F87500E1EF2C /* LandingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83F96D81ED9F87500E1EF2C /* LandingPage.xib */; };
 		C83F96DB1ED9FD3200E1EF2C /* riLo5zEdT.png in Resources */ = {isa = PBXBuildFile; fileRef = C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */; };
+		C8ADAE3C1EDA20AB003B8950 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE321EDA20AB003B8950 /* Lato-Black.ttf */; };
+		C8ADAE3D1EDA20AB003B8950 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE331EDA20AB003B8950 /* Lato-BlackItalic.ttf */; };
+		C8ADAE3E1EDA20AB003B8950 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE341EDA20AB003B8950 /* Lato-Bold.ttf */; };
+		C8ADAE3F1EDA20AB003B8950 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE351EDA20AB003B8950 /* Lato-BoldItalic.ttf */; };
+		C8ADAE401EDA20AB003B8950 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE361EDA20AB003B8950 /* Lato-Hairline.ttf */; };
+		C8ADAE411EDA20AB003B8950 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE371EDA20AB003B8950 /* Lato-HairlineItalic.ttf */; };
+		C8ADAE421EDA20AB003B8950 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE381EDA20AB003B8950 /* Lato-Italic.ttf */; };
+		C8ADAE431EDA20AB003B8950 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE391EDA20AB003B8950 /* Lato-Light.ttf */; };
+		C8ADAE441EDA20AB003B8950 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE3A1EDA20AB003B8950 /* Lato-LightItalic.ttf */; };
+		C8ADAE451EDA20AB003B8950 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE3B1EDA20AB003B8950 /* Lato-Regular.ttf */; };
+		C8ADAE4B1EDA2DF7003B8950 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE4A1EDA2DF7003B8950 /* iTunesArtwork@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,17 @@
 		C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundRedGradient.png; path = RedditStalker/Assets.xcassets/backgroundRedGradient.png; sourceTree = "<group>"; };
 		C83F96D81ED9F87500E1EF2C /* LandingPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingPage.xib; sourceTree = "<group>"; };
 		C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = riLo5zEdT.png; path = RedditStalker/Assets.xcassets/riLo5zEdT.png; sourceTree = "<group>"; };
+		C8ADAE321EDA20AB003B8950 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		C8ADAE331EDA20AB003B8950 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C8ADAE341EDA20AB003B8950 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C8ADAE351EDA20AB003B8950 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C8ADAE361EDA20AB003B8950 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Hairline.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		C8ADAE371EDA20AB003B8950 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-HairlineItalic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		C8ADAE381EDA20AB003B8950 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		C8ADAE391EDA20AB003B8950 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		C8ADAE3A1EDA20AB003B8950 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		C8ADAE3B1EDA20AB003B8950 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C8ADAE4A1EDA2DF7003B8950 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../Assets/App Icon/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +112,19 @@
 			isa = PBXGroup;
 			children = (
 				C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */,
+				C8ADAE321EDA20AB003B8950 /* Lato-Black.ttf */,
+				C8ADAE331EDA20AB003B8950 /* Lato-BlackItalic.ttf */,
+				C8ADAE341EDA20AB003B8950 /* Lato-Bold.ttf */,
+				C8ADAE351EDA20AB003B8950 /* Lato-BoldItalic.ttf */,
+				C8ADAE361EDA20AB003B8950 /* Lato-Hairline.ttf */,
+				C8ADAE371EDA20AB003B8950 /* Lato-HairlineItalic.ttf */,
+				C8ADAE381EDA20AB003B8950 /* Lato-Italic.ttf */,
+				C8ADAE391EDA20AB003B8950 /* Lato-Light.ttf */,
+				C8ADAE3A1EDA20AB003B8950 /* Lato-LightItalic.ttf */,
+				C8ADAE3B1EDA20AB003B8950 /* Lato-Regular.ttf */,
 				C83F96D31ED9F53300E1EF2C /* Reddit-icon.png */,
 				C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */,
+				C8ADAE4A1EDA2DF7003B8950 /* iTunesArtwork@2x.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -163,12 +196,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ADAE3D1EDA20AB003B8950 /* Lato-BlackItalic.ttf in Resources */,
+				C8ADAE441EDA20AB003B8950 /* Lato-LightItalic.ttf in Resources */,
+				C8ADAE3C1EDA20AB003B8950 /* Lato-Black.ttf in Resources */,
+				C8ADAE421EDA20AB003B8950 /* Lato-Italic.ttf in Resources */,
+				C8ADAE4B1EDA2DF7003B8950 /* iTunesArtwork@2x.png in Resources */,
+				C8ADAE411EDA20AB003B8950 /* Lato-HairlineItalic.ttf in Resources */,
+				C8ADAE401EDA20AB003B8950 /* Lato-Hairline.ttf in Resources */,
 				C83F96CB1ED9EEB400E1EF2C /* LaunchScreen.storyboard in Resources */,
 				C83F96D61ED9F81700E1EF2C /* backgroundRedGradient.png in Resources */,
 				C83F96DB1ED9FD3200E1EF2C /* riLo5zEdT.png in Resources */,
 				C83F96C81ED9EEB400E1EF2C /* Assets.xcassets in Resources */,
 				C83F96D41ED9F53300E1EF2C /* Reddit-icon.png in Resources */,
+				C8ADAE451EDA20AB003B8950 /* Lato-Regular.ttf in Resources */,
+				C8ADAE3E1EDA20AB003B8950 /* Lato-Bold.ttf in Resources */,
 				C83F96D91ED9F87500E1EF2C /* LandingPage.xib in Resources */,
+				C8ADAE3F1EDA20AB003B8950 /* Lato-BoldItalic.ttf in Resources */,
+				C8ADAE431EDA20AB003B8950 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +376,7 @@
 				C83F96D11ED9EEB400E1EF2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,12 @@
 		C83F96BD1ED9EEB400E1EF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F96BC1ED9EEB400E1EF2C /* main.m */; };
 		C83F96C01ED9EEB400E1EF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F96BF1ED9EEB400E1EF2C /* AppDelegate.m */; };
 		C83F96C31ED9EEB400E1EF2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F96C21ED9EEB400E1EF2C /* ViewController.m */; };
-		C83F96C61ED9EEB400E1EF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83F96C41ED9EEB400E1EF2C /* Main.storyboard */; };
 		C83F96C81ED9EEB400E1EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83F96C71ED9EEB400E1EF2C /* Assets.xcassets */; };
 		C83F96CB1ED9EEB400E1EF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83F96C91ED9EEB400E1EF2C /* LaunchScreen.storyboard */; };
+		C83F96D41ED9F53300E1EF2C /* Reddit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C83F96D31ED9F53300E1EF2C /* Reddit-icon.png */; };
+		C83F96D61ED9F81700E1EF2C /* backgroundRedGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */; };
+		C83F96D91ED9F87500E1EF2C /* LandingPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C83F96D81ED9F87500E1EF2C /* LandingPage.xib */; };
+		C83F96DB1ED9FD3200E1EF2C /* riLo5zEdT.png in Resources */ = {isa = PBXBuildFile; fileRef = C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +25,13 @@
 		C83F96BF1ED9EEB400E1EF2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C83F96C11ED9EEB400E1EF2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C83F96C21ED9EEB400E1EF2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C83F96C51ED9EEB400E1EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C83F96C71ED9EEB400E1EF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83F96CA1ED9EEB400E1EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C83F96CC1ED9EEB400E1EF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83F96D31ED9F53300E1EF2C /* Reddit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reddit-icon.png"; path = "RedditStalker/Assets.xcassets/Reddit-icon.png"; sourceTree = SOURCE_ROOT; };
+		C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundRedGradient.png; path = RedditStalker/Assets.xcassets/backgroundRedGradient.png; sourceTree = "<group>"; };
+		C83F96D81ED9F87500E1EF2C /* LandingPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandingPage.xib; sourceTree = "<group>"; };
+		C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = riLo5zEdT.png; path = RedditStalker/Assets.xcassets/riLo5zEdT.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		C83F96AF1ED9EEB400E1EF2C = {
 			isa = PBXGroup;
 			children = (
+				C83F96D21ED9F51000E1EF2C /* Assets */,
 				C83F96BA1ED9EEB400E1EF2C /* RedditStalker */,
 				C83F96B91ED9EEB400E1EF2C /* Products */,
 			);
@@ -58,11 +65,11 @@
 		C83F96BA1ED9EEB400E1EF2C /* RedditStalker */ = {
 			isa = PBXGroup;
 			children = (
+				C83F96D71ED9F85700E1EF2C /* Views */,
 				C83F96BE1ED9EEB400E1EF2C /* AppDelegate.h */,
 				C83F96BF1ED9EEB400E1EF2C /* AppDelegate.m */,
 				C83F96C11ED9EEB400E1EF2C /* ViewController.h */,
 				C83F96C21ED9EEB400E1EF2C /* ViewController.m */,
-				C83F96C41ED9EEB400E1EF2C /* Main.storyboard */,
 				C83F96C71ED9EEB400E1EF2C /* Assets.xcassets */,
 				C83F96C91ED9EEB400E1EF2C /* LaunchScreen.storyboard */,
 				C83F96CC1ED9EEB400E1EF2C /* Info.plist */,
@@ -77,6 +84,24 @@
 				C83F96BC1ED9EEB400E1EF2C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C83F96D21ED9F51000E1EF2C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */,
+				C83F96D31ED9F53300E1EF2C /* Reddit-icon.png */,
+				C83F96D51ED9F81700E1EF2C /* backgroundRedGradient.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C83F96D71ED9F85700E1EF2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C83F96D81ED9F87500E1EF2C /* LandingPage.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83F96CB1ED9EEB400E1EF2C /* LaunchScreen.storyboard in Resources */,
+				C83F96D61ED9F81700E1EF2C /* backgroundRedGradient.png in Resources */,
+				C83F96DB1ED9FD3200E1EF2C /* riLo5zEdT.png in Resources */,
 				C83F96C81ED9EEB400E1EF2C /* Assets.xcassets in Resources */,
-				C83F96C61ED9EEB400E1EF2C /* Main.storyboard in Resources */,
+				C83F96D41ED9F53300E1EF2C /* Reddit-icon.png in Resources */,
+				C83F96D91ED9F87500E1EF2C /* LandingPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,14 +188,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C83F96C41ED9EEB400E1EF2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C83F96C51ED9EEB400E1EF2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C83F96C91ED9EEB400E1EF2C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

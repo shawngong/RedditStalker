@@ -32,6 +32,9 @@
 		C8ADAE581EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE561EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m */; };
 		C8ADAE591EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */; };
 		C8ADAE5B1EDA582C003B8950 /* headerNoBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE5A1EDA582C003B8950 /* headerNoBorder.png */; };
+		C8ADAE5E1EDB6E01003B8950 /* RedditUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE5D1EDB6E01003B8950 /* RedditUserData.m */; };
+		C8ADAE611EDB6E64003B8950 /* RedditCommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE601EDB6E64003B8950 /* RedditCommentData.m */; };
+		C8ADAE651EDB7373003B8950 /* CommentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE641EDB7373003B8950 /* CommentParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,13 @@
 		C8ADAE561EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviousCommentsCollectionViewCell.m; sourceTree = "<group>"; };
 		C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviousCommentsCollectionViewCell.xib; sourceTree = "<group>"; };
 		C8ADAE5A1EDA582C003B8950 /* headerNoBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headerNoBorder.png; path = RedditStalker/headerNoBorder.png; sourceTree = "<group>"; };
+		C8ADAE5C1EDB6E01003B8950 /* RedditUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditUserData.h; sourceTree = "<group>"; };
+		C8ADAE5D1EDB6E01003B8950 /* RedditUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditUserData.m; sourceTree = "<group>"; };
+		C8ADAE5F1EDB6E64003B8950 /* RedditCommentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditCommentData.h; sourceTree = "<group>"; };
+		C8ADAE601EDB6E64003B8950 /* RedditCommentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditCommentData.m; sourceTree = "<group>"; };
+		C8ADAE621EDB7014003B8950 /* RedditUserCommentParseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditUserCommentParseDelegate.h; sourceTree = "<group>"; };
+		C8ADAE631EDB7373003B8950 /* CommentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentParser.h; sourceTree = "<group>"; };
+		C8ADAE641EDB7373003B8950 /* CommentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,13 @@
 				C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */,
 				C8ADAE521EDA48CA003B8950 /* SearchViewController.h */,
 				C8ADAE531EDA48CA003B8950 /* SearchViewController.m */,
+				C8ADAE631EDB7373003B8950 /* CommentParser.h */,
+				C8ADAE641EDB7373003B8950 /* CommentParser.m */,
+				C8ADAE621EDB7014003B8950 /* RedditUserCommentParseDelegate.h */,
+				C8ADAE5F1EDB6E64003B8950 /* RedditCommentData.h */,
+				C8ADAE601EDB6E64003B8950 /* RedditCommentData.m */,
+				C8ADAE5C1EDB6E01003B8950 /* RedditUserData.h */,
+				C8ADAE5D1EDB6E01003B8950 /* RedditUserData.m */,
 				C83F96C11ED9EEB400E1EF2C /* ViewController.h */,
 				C83F96C21ED9EEB400E1EF2C /* ViewController.m */,
 				C83F96C71ED9EEB400E1EF2C /* Assets.xcassets */,
@@ -247,8 +264,11 @@
 			files = (
 				C8ADAE581EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m in Sources */,
 				C83F96C31ED9EEB400E1EF2C /* ViewController.m in Sources */,
+				C8ADAE651EDB7373003B8950 /* CommentParser.m in Sources */,
 				C83F96C01ED9EEB400E1EF2C /* AppDelegate.m in Sources */,
 				C8ADAE541EDA48CA003B8950 /* SearchViewController.m in Sources */,
+				C8ADAE5E1EDB6E01003B8950 /* RedditUserData.m in Sources */,
+				C8ADAE611EDB6E64003B8950 /* RedditCommentData.m in Sources */,
 				C83F96BD1ED9EEB400E1EF2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

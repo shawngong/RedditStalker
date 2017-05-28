@@ -56,7 +56,7 @@
     NSString *trimmedString = [self.searchField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (trimmedString.length != 0) {
         SearchViewController *searchViewController = [SearchViewController new];
-        searchViewController.searchedUsername = [NSString stringWithFormat:@"/u/%@", trimmedString];
+        searchViewController.searchedUsername = trimmedString;
         
         self.searchField.text = @"";
         

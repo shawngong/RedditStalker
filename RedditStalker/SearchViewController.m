@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "PreviousCommentsCollectionViewCell.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CommentParser.h"
 
 static NSString *kCellReuseID = @"prevRedditComment";
 
@@ -37,7 +38,7 @@ static NSString *kCellReuseID = @"prevRedditComment";
     }
     
     if (self.user) {
-        self.user.text = self.searchedUsername;
+        self.user.text = [NSString stringWithFormat:@"/u/%@", self.searchedUsername];
     }
     
     if (self.holderImage) {
@@ -54,6 +55,31 @@ static NSString *kCellReuseID = @"prevRedditComment";
     if (prevCommentsCollectionViewCell) {
         [self.previousCommentsCollectionView registerNib:prevCommentsCollectionViewCell forCellWithReuseIdentifier:kCellReuseID];
     }
+    
+    self.delegate = [CommentParser new];
+    
+    [self getPrevCommentData:^void(){
+        [self.previousCommentsCollectionView reloadData];
+    }];
+}
+
+- (void)getPrevCommentData:(void (^)(void))completion
+{
+    NSString *urlAsString = [NSString stringWithFormat:@"https://www.reddit.com/user/%@/comments.json", self.searchedUsername];
+    NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
+    NSString *encodedUrlAsString = [urlAsString stringByAddingPercentEncodingWithAllowedCharacters:set];
+    NSURLSession *getCommentsSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+
+    [[getCommentsSession dataTaskWithURL:[NSURL URLWithString:encodedUrlAsString]
+                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"error: %@", error.description);
+            [self.delegate fetchingDataFailedWithError:error];
+        } else {
+            [self.delegate commentsFromJSON:data error:nil];
+        }
+    }] resume];
+    
 }
 
 // CollectionView Stuff

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RedditUserCommentParseDelegate.h"
+
 
 @interface SearchViewController : UIViewController
 
+@property (strong, nonatomic) id delegate;
 @property (strong, nonatomic) NSString *searchedUsername;
 
 @end

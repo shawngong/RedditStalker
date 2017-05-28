@@ -27,6 +27,11 @@
 		C8ADAE441EDA20AB003B8950 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE3A1EDA20AB003B8950 /* Lato-LightItalic.ttf */; };
 		C8ADAE451EDA20AB003B8950 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE3B1EDA20AB003B8950 /* Lato-Regular.ttf */; };
 		C8ADAE4B1EDA2DF7003B8950 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE4A1EDA2DF7003B8950 /* iTunesArtwork@2x.png */; };
+		C8ADAE4D1EDA4415003B8950 /* SearchResultsPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE4C1EDA4415003B8950 /* SearchResultsPage.xib */; };
+		C8ADAE541EDA48CA003B8950 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE531EDA48CA003B8950 /* SearchViewController.m */; };
+		C8ADAE581EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADAE561EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m */; };
+		C8ADAE591EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */; };
+		C8ADAE5B1EDA582C003B8950 /* headerNoBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ADAE5A1EDA582C003B8950 /* headerNoBorder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,13 @@
 		C8ADAE3A1EDA20AB003B8950 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		C8ADAE3B1EDA20AB003B8950 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "RedditStalker/Assets.xcassets/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		C8ADAE4A1EDA2DF7003B8950 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "../../Assets/App Icon/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		C8ADAE4C1EDA4415003B8950 /* SearchResultsPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsPage.xib; sourceTree = "<group>"; };
+		C8ADAE521EDA48CA003B8950 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C8ADAE531EDA48CA003B8950 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		C8ADAE551EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviousCommentsCollectionViewCell.h; sourceTree = "<group>"; };
+		C8ADAE561EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviousCommentsCollectionViewCell.m; sourceTree = "<group>"; };
+		C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviousCommentsCollectionViewCell.xib; sourceTree = "<group>"; };
+		C8ADAE5A1EDA582C003B8950 /* headerNoBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = headerNoBorder.png; path = RedditStalker/headerNoBorder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,11 @@
 				C83F96D71ED9F85700E1EF2C /* Views */,
 				C83F96BE1ED9EEB400E1EF2C /* AppDelegate.h */,
 				C83F96BF1ED9EEB400E1EF2C /* AppDelegate.m */,
+				C8ADAE551EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.h */,
+				C8ADAE561EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m */,
+				C8ADAE571EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib */,
+				C8ADAE521EDA48CA003B8950 /* SearchViewController.h */,
+				C8ADAE531EDA48CA003B8950 /* SearchViewController.m */,
 				C83F96C11ED9EEB400E1EF2C /* ViewController.h */,
 				C83F96C21ED9EEB400E1EF2C /* ViewController.m */,
 				C83F96C71ED9EEB400E1EF2C /* Assets.xcassets */,
@@ -111,6 +128,7 @@
 		C83F96D21ED9F51000E1EF2C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C8ADAE5A1EDA582C003B8950 /* headerNoBorder.png */,
 				C83F96DA1ED9FD3200E1EF2C /* riLo5zEdT.png */,
 				C8ADAE321EDA20AB003B8950 /* Lato-Black.ttf */,
 				C8ADAE331EDA20AB003B8950 /* Lato-BlackItalic.ttf */,
@@ -132,6 +150,7 @@
 		C83F96D71ED9F85700E1EF2C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C8ADAE4C1EDA4415003B8950 /* SearchResultsPage.xib */,
 				C83F96D81ED9F87500E1EF2C /* LandingPage.xib */,
 			);
 			name = Views;
@@ -197,9 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8ADAE3D1EDA20AB003B8950 /* Lato-BlackItalic.ttf in Resources */,
+				C8ADAE4D1EDA4415003B8950 /* SearchResultsPage.xib in Resources */,
 				C8ADAE441EDA20AB003B8950 /* Lato-LightItalic.ttf in Resources */,
 				C8ADAE3C1EDA20AB003B8950 /* Lato-Black.ttf in Resources */,
 				C8ADAE421EDA20AB003B8950 /* Lato-Italic.ttf in Resources */,
+				C8ADAE5B1EDA582C003B8950 /* headerNoBorder.png in Resources */,
 				C8ADAE4B1EDA2DF7003B8950 /* iTunesArtwork@2x.png in Resources */,
 				C8ADAE411EDA20AB003B8950 /* Lato-HairlineItalic.ttf in Resources */,
 				C8ADAE401EDA20AB003B8950 /* Lato-Hairline.ttf in Resources */,
@@ -207,6 +228,7 @@
 				C83F96D61ED9F81700E1EF2C /* backgroundRedGradient.png in Resources */,
 				C83F96DB1ED9FD3200E1EF2C /* riLo5zEdT.png in Resources */,
 				C83F96C81ED9EEB400E1EF2C /* Assets.xcassets in Resources */,
+				C8ADAE591EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.xib in Resources */,
 				C83F96D41ED9F53300E1EF2C /* Reddit-icon.png in Resources */,
 				C8ADAE451EDA20AB003B8950 /* Lato-Regular.ttf in Resources */,
 				C8ADAE3E1EDA20AB003B8950 /* Lato-Bold.ttf in Resources */,
@@ -223,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ADAE581EDA50AE003B8950 /* PreviousCommentsCollectionViewCell.m in Sources */,
 				C83F96C31ED9EEB400E1EF2C /* ViewController.m in Sources */,
 				C83F96C01ED9EEB400E1EF2C /* AppDelegate.m in Sources */,
+				C8ADAE541EDA48CA003B8950 /* SearchViewController.m in Sources */,
 				C83F96BD1ED9EEB400E1EF2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

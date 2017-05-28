@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "SearchViewController.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UIButton *clearHistory;
+@property (weak, nonatomic) IBOutlet UITextField *searchField;
 
 @end
 
@@ -22,8 +24,21 @@
     [super viewDidLoad];
     
     [[NSBundle mainBundle] loadNibNamed:@"LandingPage" owner:self options:nil];
-    if (self.view != nil) {
+    if (self.view) {
         [self.view addSubview:self.mainView];
+    }
+    
+    if (self.searchButton) {
+        [self.searchButton addTarget:self action:@selector(searchForUser) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    if (self.clearHistory) {
+        [self.clearHistory addTarget:self action:@selector(clearPrevHistory) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    // On enter search
+    if (self.searchField) {
+        [self.searchField addTarget:self action:@selector(searchForUser) forControlEvents:UIControlEventEditingDidEndOnExit];
     }
     
     // Dismiss keyboard
@@ -34,6 +49,24 @@
 - (void)dismissKeyboard
 {
     [self.view endEditing:YES];
+}
+
+- (void)searchForUser
+{
+    NSString *trimmedString = [self.searchField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if (trimmedString.length != 0) {
+        SearchViewController *searchViewController = [SearchViewController new];
+        searchViewController.searchedUsername = [NSString stringWithFormat:@"/u/%@", trimmedString];
+        
+        self.searchField.text = @"";
+        
+        [self.navigationController pushViewController:searchViewController animated:YES];
+    }
+}
+
+- (void)clearPrevHistory
+{
+    
 }
 
 

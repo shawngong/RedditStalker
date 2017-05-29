@@ -8,27 +8,71 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PreviousCommentsCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-0n-K6C">
-                        <rect key="frame" x="60" y="59" width="17" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-0n-K6C">
+                        <rect key="frame" x="10" y="9" width="114" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="V6W-xN-e0L"/>
+                            <constraint firstAttribute="width" constant="114" id="u1O-Lz-wzy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYA-fV-O5w">
+                        <rect key="frame" x="11" y="39" width="238" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="UdH-US-pnr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYD-Fw-KY3">
+                        <rect key="frame" x="177" y="10" width="79" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ADr-Fc-H5E"/>
+                            <constraint firstAttribute="width" constant="79" id="vHQ-yB-1t6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
-            <size key="customSize" width="260" height="150"/>
-            <point key="canvasLocation" x="130" y="102"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CYD-Fw-KY3" secondAttribute="trailing" constant="4" id="2Ta-cj-lt3"/>
+                <constraint firstItem="Xm2-0n-K6C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="K5O-p7-fZ6"/>
+                <constraint firstItem="Xm2-0n-K6C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="O4g-EY-VTv"/>
+                <constraint firstAttribute="trailing" secondItem="GYA-fV-O5w" secondAttribute="trailing" constant="11" id="U8a-rR-ZwG"/>
+                <constraint firstItem="GYA-fV-O5w" firstAttribute="top" secondItem="CYD-Fw-KY3" secondAttribute="bottom" constant="8" id="eaz-hz-Yqi"/>
+                <constraint firstItem="CYD-Fw-KY3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="guO-QH-tO7"/>
+                <constraint firstItem="GYA-fV-O5w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="r8x-CV-zVc"/>
+            </constraints>
+            <size key="customSize" width="260" height="200"/>
+            <connections>
+                <outlet property="bodyLabel" destination="GYA-fV-O5w" id="d62-PA-z0E"/>
+                <outlet property="scoreLabel" destination="CYD-Fw-KY3" id="fTR-4K-KVC"/>
+                <outlet property="subredditLabel" destination="Xm2-0n-K6C" id="6ge-GF-Qrc"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="127"/>
         </collectionViewCell>
     </objects>
 </document>

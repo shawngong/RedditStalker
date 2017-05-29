@@ -48,7 +48,7 @@
 
 - (void)fetchingDataFailedWithError:(NSError *)error;
 {
-    
+    NSLog(@"error: %@", error.description);
 }
 
 @end

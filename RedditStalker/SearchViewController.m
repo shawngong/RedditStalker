@@ -20,6 +20,7 @@ static NSString *kCellReuseID = @"prevRedditComment";
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UILabel *user;
 @property (weak, nonatomic) IBOutlet UIImageView *holderImage;
+@property (strong, nonatomic) NSArray *currentUserComments;
 
 @end
 
@@ -73,10 +74,12 @@ static NSString *kCellReuseID = @"prevRedditComment";
     [[getCommentsSession dataTaskWithURL:[NSURL URLWithString:encodedUrlAsString]
                       completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
-            NSLog(@"error: %@", error.description);
             [self.delegate fetchingDataFailedWithError:error];
         } else {
-            [self.delegate commentsFromJSON:data error:nil];
+            self.currentUserComments = [self.delegate commentsFromJSON:data error:nil];
+            if (completion) {
+                dispatch_async(dispatch_get_main_queue(), completion);
+            }
         }
     }] resume];
     
@@ -86,15 +89,27 @@ static NSString *kCellReuseID = @"prevRedditComment";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    if (self.currentUserComments) {
+        return self.currentUserComments.count;
+    } else {
+        return 10;
+    }
+
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
+    NSInteger index = (indexPath.section * 2) + indexPath.row;
     PreviousCommentsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellReuseID forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor greenColor];
+    if (self.currentUserComments) {
+        cell.bodyLabel.text = [self.currentUserComments[index] valueForKey:@"body"];
+        cell.bodyLabel.numberOfLines = 0;
+        cell.subredditLabel.text = [self.currentUserComments[index] valueForKey:@"subreddit"];
+        cell.scoreLabel.text = [NSString stringWithFormat:@"%@", [self.currentUserComments[index] valueForKey:@"score"]];
+    }
+    
     return cell;
 }
 

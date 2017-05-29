@@ -10,4 +10,9 @@
 
 @interface PreviousCommentsCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *subredditLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
+
+
 @end
